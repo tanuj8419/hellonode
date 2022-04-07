@@ -11,7 +11,7 @@ node {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-        app = docker.build("upasanatestgit/hellonode")
+        app = docker.build("tanuj8419/hellonode")
     }
 
     stage('Test image') {
