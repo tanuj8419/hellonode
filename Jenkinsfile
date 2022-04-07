@@ -29,7 +29,7 @@ node {
          * Second, the 'latest' tag.
          * Pushing multiple tags is cheap, as all the layers are reused. 
          *docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials'*/
-           sh 'sudo docker login -u "tanuj8419" -p "Tanuj@2303" docker.io'
+           sh 'sudo docker login -S -u "tanuj8419" -p "Tanuj@2303" docker.io'
                
             app.push("${env.BUILD_NUMBER}")
             app.push("latest")
